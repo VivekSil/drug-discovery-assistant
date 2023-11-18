@@ -1,1 +1,1 @@
-# DDA
+# Drug Discovery Assistant
