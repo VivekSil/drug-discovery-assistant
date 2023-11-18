@@ -65,9 +65,9 @@ if "messages" not in st.session_state:
     st.session_state = {"messages":[], "cohere_model":"command"}
 
 # Display chat messages from history on app rerun
-for message in st.session_state["messages"]:
-    with st.chat_message(message["user_name"]):
-        st.markdown(message["text"])
+# for message in st.session_state["messages"]:
+#     with st.chat_message(message["user_name"]):
+#         st.markdown(message["text"])
 
 # Accept user input
 home , search = st.tabs(["Research Chat (Home)","Drug Search (beta)"])
