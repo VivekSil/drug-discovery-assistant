@@ -87,7 +87,7 @@ with search:
                             data = json.load(f) 
                         # print(data)
                         id_ = data[name.lower()]
-                        url = "https://go.drugbank.com/drugs/"+id_
+                        url = st.secrets["web_url"]+id_
                         html_content = requests.get(url).text
                         soup = BeautifulSoup(html_content, "html.parser")
                         texts = soup.find_all('p')
