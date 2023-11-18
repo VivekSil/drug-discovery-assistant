@@ -117,7 +117,8 @@ if query:=st.chat_input(" "):
                 response = co.chat(
                     model=st.session_state["cohere_model"],
                     message=prompt,
-                    chat_history=st.session_state["messages"]
+                    chat_history=st.session_state["messages"],
+                    prompt_truncation='AUTO'
                 )
                     
                 full_response += (response.text or "")
