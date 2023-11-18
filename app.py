@@ -58,7 +58,7 @@ def get_chunks(query, client, limit=3):
 st.title("Drug Discovery Assist 🥼🔬🧬")
 # st.image("hero.jpeg")
 
-img = Image.open('../hero.jpeg')
+img = Image.open('./hero.jpeg')
 numpydata = np.asarray(img)
 st.image(numpydata)
 if "messages" not in st.session_state:
