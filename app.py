@@ -70,7 +70,7 @@ for message in st.session_state["messages"]:
         st.markdown(message["text"])
 
 # Accept user input
-home , search = st.tabs(["ResearchChat(Home)","DrugSearch(beta)"])
+home , search = st.tabs(["Research Chat (Home)","Drug Search (beta)"])
 
 with search:
     with open('./data.json', 'r') as f:
